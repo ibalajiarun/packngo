@@ -80,7 +80,7 @@ type DeviceCreateRequest struct {
 	AlwaysPXE             bool       `json:"always_pxe,omitempty"`
 	HardwareReservationID string     `json:"hardware_reservation_id,omitempty"`
 	SpotInstance          bool       `json:"spot_instance,omitempty"`
-	SpotPriceMax          float64    `json:"spot_price_max,omitempty,string"`
+	SpotPriceMax          string     `json:"spot_price_max,omitempty"`
 	TerminationTime       *Timestamp `json:"termination_time,omitempty"`
 	CustomData            string     `json:"customdata,omitempty"`
 	// UserSSHKeys is a list of user UUIDs - essentialy a list of
